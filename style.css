@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px; /* Add padding to header */
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 10px 20px;
+    text-align: center;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    transition: box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    box-shadow: 0 0 10px rgba(71, 36, 36, 0.3); /* Apply box shadow on hover */
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+}
+
+.pricing-card .price {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-card li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Colors for pricing cards */
+.pricing-card.basic {
+    background-color: #f0f0f0;
+}
+
+.pricing-card.pro {
+    background-color: #ffd700;
+}
+
+.pricing-card.premium {
+    background-color: #ff69b4;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    /*footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px; /* Adjust margin as needed */
+    }
+    
+    .social-icons a img {
+        width: 40px; /* Adjust width as needed */
+        height: 40px; /* Adjust height as needed */
+        border-radius: 50%; /* Make it circular */
+    }
+    .social-icons a:hover {
+        color: #007bff;
+    }
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .pricing-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-card {
+        width: calc(100% - 20px);
+    }
+}
+/* Existing CSS styles */
+
+.pricing-card.highlighted {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.choose-plan.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%; /* To make it circular */
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Align items to both ends */
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px; /* Add padding to header */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+    flex-grow: 1; /* Allow title to take remaining space */
+
+}
